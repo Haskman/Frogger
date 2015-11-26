@@ -80,7 +80,8 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // checkCollisions();
+        //Clear canvas
+        ctx.clearRect(0,0,canvas.width,canvas.height);
     }
 
     /* This is called by the update function  and loops through all of the
@@ -109,9 +110,9 @@ var Engine = (function(global) {
          */
         var rowImages = [
                 'images/water-block.png',   // Top row is water
-                'images/stone-block.png',   // Row 1 of 3 of stone
-                'images/stone-block.png',   // Row 2 of 3 of stone
-                'images/stone-block.png',   // Row 3 of 3 of stone
+                'images/asphalt-block.png',   // Row 1 of 3 of asphalt
+                'images/asphalt-block.png',   // Row 2 of 3 of asphalt
+                'images/asphalt-block.png',   // Row 3 of 3 of asphalt
                 'images/grass-block.png',   // Row 1 of 2 of grass
                 'images/grass-block.png'    // Row 2 of 2 of grass
             ],
@@ -168,7 +169,7 @@ var Engine = (function(global) {
      * all of these images are properly loaded our game will start.
      */
     Resources.load([
-        'images/stone-block.png',
+        'images/asphalt-block.png',
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',

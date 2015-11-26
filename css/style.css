@@ -1,4 +1,12 @@
 body {
     text-align: center;
-    background-color: #000;
+    background-color: #FFFFFF;
+}
+
+#score {
+    color: blue;
+}
+
+#lives {
+    color: red;
 }
